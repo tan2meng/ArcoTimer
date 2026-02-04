@@ -1,0 +1,7 @@
+{
+  "name": "Copy of ArcoTime Pro",
+  "description": "A professional alarm, timer, and stopwatch application featuring advanced loop timers for complex schedules. Designed with an Arco-inspired aesthetic.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
