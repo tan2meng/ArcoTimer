@@ -172,7 +172,8 @@ export class ShakeAlarmService {
            }
 
            // Check for Finish
-           let running = s.isRunning;
+           // Explicitly type running as boolean to prevent TS inference error (Type 'false' is not assignable to type 'true')
+           let running: boolean = s.isRunning;
            if (remaining <= 0) {
                ringing = true;
                running = false; // Stop running
