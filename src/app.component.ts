@@ -20,8 +20,22 @@ import { LocalizationService } from './services/localization.service';
       <aside class="hidden md:flex flex-col w-64 bg-white dark:bg-[#1C1C1C] border-r border-gray-100 dark:border-gray-800 z-20">
           <div class="p-6">
               <h1 class="text-2xl font-bold text-td-brand flex items-center gap-2 tracking-tight">
-                 <div class="w-8 h-8 rounded-lg bg-td-brand text-white flex items-center justify-center">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                 <!-- Brand Icon -->
+                 <div class="w-9 h-9 relative group">
+                    <svg viewBox="0 0 512 512" fill="none" class="w-full h-full drop-shadow-sm transition-transform group-hover:scale-105">
+                        <defs>
+                          <linearGradient id="brand_grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#69b1ff"/>
+                            <stop offset="1" stop-color="#1677ff"/>
+                          </linearGradient>
+                        </defs>
+                        <rect width="512" height="512" rx="120" fill="url(#brand_grad)"/>
+                        <circle cx="256" cy="256" r="160" stroke="white" stroke-opacity="0.25" stroke-width="40"/>
+                        <path d="M256 96 A160 160 0 0 1 416 256" stroke="white" stroke-width="40" stroke-linecap="round"/>
+                        <line x1="256" y1="256" x2="256" y2="166" stroke="white" stroke-width="42" stroke-linecap="round"/>
+                        <line x1="256" y1="256" x2="336" y2="336" stroke="white" stroke-width="42" stroke-linecap="round"/>
+                        <circle cx="256" cy="256" r="24" fill="white"/>
+                    </svg>
                  </div>
                  ArcoTime
               </h1>
