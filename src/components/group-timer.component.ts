@@ -188,10 +188,10 @@ import { LocalizationService } from '../services/localization.service';
 
       </div>
 
-      <!-- Add/Edit Modal (Unchanged) -->
+      <!-- Add/Edit Modal (Updated with overflow-hidden) -->
       @if (showModal()) {
         <div class="absolute inset-0 bg-black/45 z-50 flex items-center justify-center p-4 backdrop-blur-[2px]" (click)="closeModal()">
-          <div class="bg-white dark:bg-[#1C1C1C] rounded-ant-lg w-full max-w-sm h-[85vh] flex flex-col shadow-2xl" (click)="$event.stopPropagation()">
+          <div class="bg-white dark:bg-[#1C1C1C] rounded-ant-lg w-full max-w-sm h-[85vh] flex flex-col shadow-2xl overflow-hidden" (click)="$event.stopPropagation()">
              
              <!-- Modal Header -->
              <div class="flex justify-between items-center px-6 py-4 border-b border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-[#141414]">
